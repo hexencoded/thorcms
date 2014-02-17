@@ -1,12 +1,12 @@
 {
-    "name": "mjolnic/voltapp",
+    "name": "mjolnic/thor-starter",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
         "laravel/framework": "4.1.*",
         "barryvdh/laravel-ide-helper": "1.*",
-        "dollar/generators": "dev-master",
-        "mjolnic/drumbs": "dev-master"
+        "mjolnic/drumbs": "dev-master",
+        "mjolnic/thor": "dev-master"
     },
     "autoload": {
         "classmap": [
@@ -33,7 +33,7 @@
             "php artisan ide-helper:generate"
         ],
         "post-create-project-cmd": [
-            "php artisan key:generate"
+            "php artisan key:generate --env=local"
         ]
     },
     "config": {

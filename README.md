@@ -1,1 +1,5 @@
-## Base app for VoltCMF
+# Laravel 4 starter site
+
+## Features
+
+* Multilanguage URL support

@@ -1,7 +1,6 @@
 <?php
 
 return array(
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -108,8 +107,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
             // for VoltApp
             'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-            'Dollar\Generators\GeneratorsServiceProvider',
             'Mjolnic\Drumbs\DrumbsServiceProvider',
+            'Mjolnic\Thor\ThorServiceProvider'
 
 	),
 

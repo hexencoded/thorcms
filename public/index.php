@@ -1,4 +1,33 @@
 <?php
+$start_microtime = microtime(true);
+
+// Setting up error reporting and display errors for the startup process
+error_reporting(-1);
+ini_set('display_errors', 1);
+
+// Set default timezone to avoid timezone warnings
+date_default_timezone_set('UTC');
+
+// Initial default server resources
+ini_set('memory_limit', '128M');
+ini_set('max_execution_time', 60);
+ini_set('post_max_size', '16M');
+ini_set('upload_max_filesize', '16M');
+
+// Initial default locale and charset
+ini_set('default_charset', 'UTF-8');
+mb_internal_encoding('UTF-8');
+ini_set('default_mimetype', 'text/html');
+setlocale(LC_ALL, 'en_US.UTF8');
+
+// Session security
+ini_set('session.auto_start', 0);
+ini_set('session.use_cookies', true);
+ini_set('session.use_only_cookies', true); # do not use PHPSESSID in urls
+ini_set('session.use_trans_sid', false); # do not use PHPSESSID in urls
+ini_set('session.hash_function', 1); # use sha1 algorithm (160 bits)
+ini_set('session.cookie_httponly', true);
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
