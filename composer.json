@@ -1,4 +1,8 @@
 {
+    "name": "mjolnic/thorcms-starter",
+    "description": "Starter Laravel 4 site featuring a blog, using ThorCMS as the backend",
+    "keywords": ["framework", "laravel", "cms", "blog", "thorcms", "backend", "multilingual"],
+    "license": "MIT",
     "require": {
         "php": ">=5.4.0",
         "laravel/framework": "4.1.*",
