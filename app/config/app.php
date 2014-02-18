@@ -109,8 +109,10 @@ return array(
             'Way\Generators\GeneratorsServiceProvider',
             'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
             'Mjolnic\Drumbs\DrumbsServiceProvider',
+            // Required by Thor:
             'Zizaco\Confide\ConfideServiceProvider',
             'Zizaco\Entrust\EntrustServiceProvider',
+            'Bootstrapper\BootstrapperServiceProvider',
             'Mjolnic\Thor\ThorServiceProvider'
 
 	),
@@ -180,7 +182,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
              'Confide'    => 'Zizaco\Confide\ConfideFacade',
              'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
-             'Admin'    => 'Mjolnic\Thor\Admin',
+             'Thor'    => 'Mjolnic\Thor\Thor',
              'User'    => 'Mjolnic\Thor\User',
              'Role'    => 'Mjolnic\Thor\Role',
              'Permission'    => 'Mjolnic\Thor\Permission',
