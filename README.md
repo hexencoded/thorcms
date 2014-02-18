@@ -4,4 +4,4 @@ Starter Laravel 4 site featuring a blog, using [ThorCMS](https://github.com/mjol
 
 ## Setup
 
-    $ composer create-project mjolnic/thorcms-starter your-project-name --prefer-dist
+    $ composer create-project mjolnic/thorcms-starter your-project-name --prefer-dist --stability=dev
