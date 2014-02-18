@@ -12,13 +12,13 @@
  */
 
 App::before(function($request) {
-            //
-        });
+    //
+});
 
 
 App::after(function($request, $response) {
-            //
-        });
+    //
+});
 
 /*
   |--------------------------------------------------------------------------
@@ -31,17 +31,17 @@ App::after(function($request, $response) {
   |
  */
 
+
 Route::filter('auth', function() {
-            if (Auth::guest()) {
-                Session::put('loginRedirect', Request::url());
-                return Redirect::to('user/login/');
-            }
-        });
+    if (Auth::guest()){
+        return Redirect::guest(locale_route('account/login'));
+    }
+});
 
 
 Route::filter('auth.basic', function() {
-            return Auth::basic();
-        });
+    return Auth::basic();
+});
 
 /*
   |--------------------------------------------------------------------------
@@ -55,9 +55,10 @@ Route::filter('auth.basic', function() {
  */
 
 Route::filter('guest', function() {
-            if (Auth::check())
-                return Redirect::to('user/login/');
-        });
+    if (Auth::check()){
+        return Redirect::home();
+    }
+});
 
 /*
   |--------------------------------------------------------------------------
@@ -67,18 +68,18 @@ Route::filter('guest', function() {
   | Access filters based on roles.
   |
  */
-        
-/*
-// Check for role on all admin routes
-Entrust::routeNeedsRole('admin*', array('admin'), Redirect::to('/'));
 
-// Check for permissions on admin actions
-Entrust::routeNeedsPermission('admin/pages*', 'manage_pages', Redirect::to('/admin'));
-Entrust::routeNeedsPermission('admin/langs*', 'manage_langs', Redirect::to('/admin'));
-Entrust::routeNeedsPermission('admin/users*', 'manage_users', Redirect::to('/admin'));
-Entrust::routeNeedsPermission('admin/roles*', 'manage_roles', Redirect::to('/admin'));
-*/
-        
+/*
+  // Check for role on all admin routes
+  Entrust::routeNeedsRole('admin*', array('admin'), Redirect::to('/'));
+
+  // Check for permissions on admin actions
+  Entrust::routeNeedsPermission('admin/pages*', 'manage_pages', Redirect::to('/admin'));
+  Entrust::routeNeedsPermission('admin/langs*', 'manage_langs', Redirect::to('/admin'));
+  Entrust::routeNeedsPermission('admin/users*', 'manage_users', Redirect::to('/admin'));
+  Entrust::routeNeedsPermission('admin/roles*', 'manage_roles', Redirect::to('/admin'));
+ */
+
 /*
   |--------------------------------------------------------------------------
   | CSRF Protection Filter
@@ -91,7 +92,7 @@ Entrust::routeNeedsPermission('admin/roles*', 'manage_roles', Redirect::to('/adm
  */
 
 Route::filter('csrf', function() {
-            if (Session::getToken() != Input::get('csrf_token') && Session::getToken() != Input::get('_token')) {
-                throw new Illuminate\Session\TokenMismatchException;
-            }
-        });
+    if (Session::getToken() != Input::get('csrf_token') && Session::getToken() != Input::get('_token')) {
+        throw new Illuminate\Session\TokenMismatchException;
+    }
+});

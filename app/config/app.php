@@ -105,9 +105,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-            // for VoltApp
+            // your providers:
+            'Way\Generators\GeneratorsServiceProvider',
             'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
             'Mjolnic\Drumbs\DrumbsServiceProvider',
+            'Zizaco\Confide\ConfideServiceProvider',
+            'Zizaco\Entrust\EntrustServiceProvider',
             'Mjolnic\Thor\ThorServiceProvider'
 
 	),
@@ -175,7 +178,13 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+             'Confide'    => 'Zizaco\Confide\ConfideFacade',
+             'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
+             'Admin'    => 'Mjolnic\Thor\Admin',
+             'User'    => 'Mjolnic\Thor\User',
+             'Role'    => 'Mjolnic\Thor\Role',
+             'Permission'    => 'Mjolnic\Thor\Permission',
+             'Language'    => 'Mjolnic\Thor\Language',
 	),
 
 );
