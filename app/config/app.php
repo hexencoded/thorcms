@@ -106,7 +106,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
             // your providers:
-            'Way\Generators\GeneratorsServiceProvider',
             'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
             'Mjolnic\Drumbs\DrumbsServiceProvider',
             // Required by Thor:
