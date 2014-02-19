@@ -19,7 +19,7 @@ Route::group(array('prefix' => App::getLocale()), function() {
             // MultiLanguage routes here
 
             Route::get('/', function() {
-                        return View::make('helloml');
+                        return View::make('hello');
                     });
         });
 
