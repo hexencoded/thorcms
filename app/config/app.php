@@ -111,7 +111,6 @@ return array(
             // Required by Thor:
             'Zizaco\Confide\ConfideServiceProvider',
             'Zizaco\Entrust\EntrustServiceProvider',
-            'Bootstrapper\BootstrapperServiceProvider',
             'Mjolnic\Thor\ThorServiceProvider'
 
 	),

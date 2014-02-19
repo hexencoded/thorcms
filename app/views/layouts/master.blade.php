@@ -32,10 +32,10 @@
         <div class="container">
             <div class="masthead">
                 <h3 class="text-muted">{{cfg('thor::brand_name')}}</h3>
-                <ul class="nav nav-justified">
-                    <li><a href="{{locale_url()}}">Home</a></li>
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="{{Route::is('home') ? 'active' : ''}}"><a href="{{locale_url()}}">Home</a></li>
                     <?php if(Auth::check()): ?>
-                        <li><a href="{{URL::route('account.show')}}"><i class="fa fa-user"></i> My profile</a></li>
+                        <li class="{{Route::is('account.show') ? 'active' : ''}}"><a href="{{URL::route('account.show')}}"><i class="fa fa-user"></i> My profile</a></li>
                         <?php if(auth_user()->can('access_backend')): ?>
                         <li><a href="{{URL::route('admin')}}"><i class="fa fa-briefcase"></i> Admin</a></li>
                         <?php endif; ?>
