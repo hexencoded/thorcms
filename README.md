@@ -5,3 +5,5 @@ Starter Laravel 4 site featuring a blog, using [ThorCMS](https://github.com/mjol
 ## Setup
 
     $ composer create-project mjolnic/thorcms-starter your-project-name --prefer-dist --stability=dev
+    $ php artisan migrate --package="mjolnic/thorcms"
+    $ php artisan db:seed --class="Mjolnic\Thor\Seeder\DatabaseSeeder"
