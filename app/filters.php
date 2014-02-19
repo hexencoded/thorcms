@@ -34,7 +34,7 @@ App::after(function($request, $response) {
 
 Route::filter('auth', function() {
     if (Auth::guest()){
-        return Redirect::guest(locale_route('account/login'));
+        return Redirect::guest(locale_url('account/login'));
     }
 });
 
