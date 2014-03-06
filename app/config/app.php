@@ -107,7 +107,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
             // your providers:
             'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-            'Mjolnic\Drumbs\DrumbsServiceProvider',
+            'Mjolnic\Thumbs\ThumbsServiceProvider',
             // Required by Thor:
             'Zizaco\Confide\ConfideServiceProvider',
             'Zizaco\Entrust\EntrustServiceProvider',

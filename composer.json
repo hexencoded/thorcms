@@ -1,14 +1,14 @@
 {
-    "name": "mjolnic/thorcms-starter",
-    "description": "Starter Laravel 4 site featuring a blog, using ThorCMS as the backend",
-    "keywords": ["framework", "laravel", "cms", "blog", "thorcms", "backend", "multilingual"],
+    "name": "mjolnic/thor-starter",
+    "description": "Starter Laravel 4 site featuring a blog, using Thor as the backend",
+    "keywords": ["framework", "laravel", "cms", "blog", "thor", "thorcms", "backend", "multilingual"],
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
         "laravel/framework": "4.1.*",
         "barryvdh/laravel-ide-helper": "1.*",
-        "mjolnic/drumbs": "dev-master",
-        "mjolnic/thorcms": "dev-master"
+        "mjolnic/thumbs": "dev-master",
+        "mjolnic/thor": "dev-master"
     },
     "autoload": {
         "classmap": [

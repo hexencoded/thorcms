@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>ThorCMS starter project</title>
+        <title>Thor starter project</title>
         
         <style type="text/css" id="relativecss">html,body{position:static}body *{position:relative}</style>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
