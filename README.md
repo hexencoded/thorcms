@@ -7,7 +7,7 @@ Starter Laravel 4 site featuring a blog, using [Thor](https://github.com/mjolnic
 1) Clone the repository
 
 
-    $ git clone https://github.com/mjolnic/thor-starter.git your-project-name
+    $ git clone https://github.com/mjolnic/Laravel-4-CMS-Starter.git your-project-name
 
 ... or create a new composer project (supposing that the default database connection will work)
 
