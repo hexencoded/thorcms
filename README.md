@@ -1,6 +1,6 @@
 # Thor starter site
 
-Starter Laravel 4 site featuring a blog, using [Thor](https://github.com/mjolnic/thor) as the backend
+Starter Laravel 4 site featuring a blog, using [Thor](https://github.com/mjolnic/Laravel-4-CMS) as the backend
 
 ## Quick start
 
