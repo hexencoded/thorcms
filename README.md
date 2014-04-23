@@ -9,21 +9,23 @@ Starter Laravel 4 site featuring a blog, using [Thor](https://github.com/mjolnic
 
 ## Getting Started
 
-1) Clone the repository (and run composer install)
+1) Clone the repository and initialize the project
 
 
-    $ git clone https://github.com/mjolnic/Laravel-4-CMS-Starter.git your-project-name
+    git clone https://github.com/mjolnic/Laravel-4-CMS-Starter.git your-project-name
+    cd your-project-name
+    composer install
 
 ... or create a new composer project (supposing that the default database connection will work)
 
-    $ composer create-project mjolnic/thor-starter your-project-name --prefer-dist --stability=dev
+    composer create-project mjolnic/thor-starter your-project-name --prefer-dist --stability=dev
 
 2) Configure your database settings under /app/config/database.php
 
 3) Migrate and seed database
 
-    $ php artisan migrate --package="mjolnic/thor"
-    $ php artisan db:seed --class="Mjolnic\Thor\Seeder\DatabaseSeeder"
+    php artisan migrate --package="mjolnic/thor"
+    php artisan db:seed --class="Mjolnic\Thor\Seeder\DatabaseSeeder"
 
 4) Navigate to the public folder URL
 
