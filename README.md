@@ -1,33 +1,27 @@
-Thor starter project
-=======
+Thor starter application
+======
 
-Starter Laravel 4 site featuring a blog, using [Thor](https://github.com/mjolnic/Laravel-4-CMS) as the backend
+CMS Framework for Laravel 4
+  
+## IMPORTANT NOTE
+
+This project is being rewritten as the [Thor CMS Framework](https://github.com/thorfw), under the   **thorfw** organisation, with separated, tested and reusable components.
+
+If you still want the an usable demo of the old version, use [this downloadable](https://github.com/thorfw/starter/releases/download/0.1.0/thorfw-0.1.0.zip) that includes all the needed dependencies.
 
 ## Requirements
 * PHP 5.4+
 * SQL database connection
 
-## Getting Started
+## Setup
+1) Configure your database settings under /app/config/database.php
 
-1) Clone the repository and initialize the project
-
-
-    git clone https://github.com/mjolnic/Laravel-4-CMS-Starter.git your-project-name
-    cd your-project-name
-    composer install
-
-... or create a new composer project (supposing that the default database connection will work)
-
-    composer create-project mjolnic/thor-starter your-project-name --prefer-dist --stability=dev
-
-2) Configure your database settings under /app/config/database.php
-
-3) Migrate and seed database
+2) Migrate and seed database
 
     php artisan migrate --package="mjolnic/thor"
     php artisan db:seed --class="Mjolnic\Thor\Seeder\DatabaseSeeder"
 
-4) Navigate to the public folder URL
+3) Navigate to the public folder URL
 
 
 Default users and their passwords: admin/admin, user/user
