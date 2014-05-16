@@ -1,6 +1,7 @@
 <?php
 
 return array(
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -12,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,6 +56,19 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Application Fallback Locale
+	|--------------------------------------------------------------------------
+	|
+	| The fallback locale determines the locale to use when the current one
+	| is not available. You may change the value to correspond to any of
+	| the language folders that are provided through your application.
+	|
+	*/
+
+	'fallback_locale' => 'en',
+
+	/*
+	|--------------------------------------------------------------------------
 	| Encryption Key
 	|--------------------------------------------------------------------------
 	|
@@ -64,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'lFCHLoH0YC45UuP5E5zO14FgslfMGBpY',
+	'key' => 'YourSecretKey!!!',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -105,13 +119,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-            // your providers:
-            'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-            'Mjolnic\Thumbs\ThumbsServiceProvider',
-            // Required by Thor:
-            'Zizaco\Confide\ConfideServiceProvider',
-            'Zizaco\Entrust\EntrustServiceProvider',
-            'Mjolnic\Thor\ThorServiceProvider'
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+
 
 	),
 
@@ -178,13 +187,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-             'Confide'    => 'Zizaco\Confide\ConfideFacade',
-             'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
-             'Thor'    => 'Mjolnic\Thor\Thor',
-             'User'    => 'Mjolnic\Thor\User',
-             'Role'    => 'Mjolnic\Thor\Role',
-             'Permission'    => 'Mjolnic\Thor\Permission',
-             'Language'    => 'Mjolnic\Thor\Language',
+
 	),
 
 );

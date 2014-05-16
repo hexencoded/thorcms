@@ -1,8 +1,5 @@
 allow from all
 
-# Set default Application Environment name
-SetEnv APPLICATION_ENV local
-
 AddDefaultCharset utf-8
 
 # Force UTF-8 for a number of file formats
@@ -12,7 +9,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 DirectoryIndex index.php index.html
 
 <IfModule mod_rewrite.c>
-    SetEnv APPLICATION_REWRITE_ENGINE on
+    SetEnv APP_REWRITE_ENGINE on
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>

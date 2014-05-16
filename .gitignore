@@ -15,8 +15,7 @@ Thumbs.db
 *.sqlite
 __TwigTemplate_*
 _ide_helper.php
-/nbproject/private/
+/nbproject/
 /protected/
 /public/uploads/
-/public/assets/backend/
 /public/packages/
