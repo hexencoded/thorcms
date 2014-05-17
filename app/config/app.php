@@ -120,6 +120,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+		'Thor\Language\LanguageServiceProvider',
+		'Thor\Translate\TranslateServiceProvider',
+		'Thor\ThorServiceProvider',
 
 
 	),
