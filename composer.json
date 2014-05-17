@@ -29,6 +29,9 @@
         }
     },
     "scripts": {
+        "pre-install-cmd": [
+            "touch app/database/production.sqlite"
+        ],
         "post-install-cmd": [
             "php artisan clear-compiled",
             "php artisan ide-helper:generate"
@@ -38,7 +41,6 @@
             "php artisan ide-helper:generate"
         ],
         "post-create-project-cmd": [
-            "touch app/database/production.sqlite",
             "php artisan key:generate"
         ]
     },
