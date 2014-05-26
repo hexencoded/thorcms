@@ -1,7 +1,7 @@
 {
     "name": "thor/starter",
     "description": "Thor CMS Framework starter site. Laravel 4 CMS.",
-    "keywords": ["framework", "laravel", "cms", "blog", "thor", "thorfw", "backend", "multilingual"],
+    "keywords": ["framework", "laravel", "cms", "blog", "thor", "thorcms", "backend", "multilingual"],
     "license": "MIT",
     "authors": [
         {
