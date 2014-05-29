@@ -1,5 +1,5 @@
 {
-    "name": "thor/starter",
+    "name": "thor/thorcms",
     "description": "Thor CMS Framework starter site. Laravel 4 CMS.",
     "keywords": ["framework", "laravel", "cms", "blog", "thor", "thorcms", "backend", "multilingual"],
     "license": "MIT",

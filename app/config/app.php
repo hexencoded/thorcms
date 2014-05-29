@@ -119,9 +119,15 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+            
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+                'Zizaco\Entrust\EntrustServiceProvider',
+                'Zizaco\Confide\ConfideServiceProvider',
 		'Thor\Language\LanguageServiceProvider',
 		'Thor\Translate\TranslateServiceProvider',
+		'Thor\Admin\AdminServiceProvider',
+		'Thor\Generators\GeneratorsServiceProvider',
+		'Thor\Models\ModelsServiceProvider',
 		'Thor\ThorServiceProvider',
 
 
@@ -190,6 +196,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+            
+                'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
+                'Confide'    => 'Zizaco\Confide\ConfideFacade',
 
 	),
 
