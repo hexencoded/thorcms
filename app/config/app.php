@@ -199,6 +199,7 @@ return array(
             
                 'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
                 'Confide'    => 'Zizaco\Confide\ConfideFacade',
+                'Admin'      => 'Thor\Admin\AdminFacade',
 
 	),
 
