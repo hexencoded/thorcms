@@ -125,10 +125,10 @@ return array(
                 'Zizaco\Confide\ConfideServiceProvider',
 		'Thor\Language\LanguageServiceProvider',
 		'Thor\Translate\TranslateServiceProvider',
-		'Thor\Admin\AdminServiceProvider',
 		'Thor\Generators\GeneratorsServiceProvider',
 		'Thor\Models\ModelsServiceProvider',
 		'Thor\ThorServiceProvider',
+		'Thor\Admin\AdminServiceProvider',
 
 
 	),
@@ -200,6 +200,9 @@ return array(
                 'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
                 'Confide'    => 'Zizaco\Confide\ConfideFacade',
                 'Admin'      => 'Thor\Admin\AdminFacade',
+                'Role'      => 'Thor\Models\Role',
+                'Permission'      => 'Thor\Models\Permission',
+                'User'      => 'Thor\Models\User',
 
 	),
 

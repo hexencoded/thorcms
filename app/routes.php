@@ -17,21 +17,6 @@ Route::get('/', function() {
     return Redirect::to(Lang::code(), 302);
 });
 
-// non-multilingual route
-Route::any('/hey/', function() {
-    return 'Hey, I\'m not a multilingual route!';
-});
-
-// specific route in spanish
-Route::any('/es/hola/', function() {
-    return 'Hola mundo!';
-});
-
-// specific route in english
-Route::any('/en/hello/', function() {
-    return 'Hello world!';
-});
-
 // all other routes that share the same path, common in all languages
 Route::langGroup(function() {
     Route::get('/', function() {
@@ -43,16 +28,5 @@ Route::langGroup(function() {
     // current Language model instance
     Route::get('/info/', function() {
         return Lang::language();
-    });
-});
-
-// example of how to use multilingual prefixed routes
-// this will generate routes like: en/account/ , en/account/login
-Route::langGroup(array('prefix' => 'account'), function() {
-    Route::get('/', function() {
-        return 'Account home';
-    });
-    Route::get('/login/', function() {
-        return 'Login page';
     });
 });
