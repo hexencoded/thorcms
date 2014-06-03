@@ -203,6 +203,7 @@ return array(
                 'Role'      => 'Thor\Models\Role',
                 'Permission'      => 'Thor\Models\Permission',
                 'User'      => 'Thor\Models\User',
+                'CRUD'    => 'Thor\Generators\CrudFacade',
 
 	),
 
