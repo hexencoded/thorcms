@@ -10,6 +10,7 @@ Laravel 4 CMS starter application using Thor CMS Framework
 ## Setup
 
 Install the project using composer:
+
     composer create-project thor/thorcms your-project-name --prefer-dist --stability=dev
 
 ... or download or clone the source code and run `composer install` in the project folder
