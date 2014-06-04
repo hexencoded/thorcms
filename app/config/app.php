@@ -204,6 +204,8 @@ return array(
                 'Permission'      => 'Thor\Models\Permission',
                 'User'      => 'Thor\Models\User',
                 'CRUD'    => 'Thor\Generators\CrudFacade',
+                'Bag'    => 'Thor\Support\BagFacade',
+                'Doc'    => 'Thor\Support\DocumentFacade',
 
 	),
 
