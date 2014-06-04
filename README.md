@@ -17,5 +17,5 @@ Install the project using composer:
 
 ## Getting started
 
-1. Run the `php artisan admin:setup` command
+1. Run the `php artisan thor:setup` command
 2. Go to the `/admin` URL and login with `admin` / `admin`
