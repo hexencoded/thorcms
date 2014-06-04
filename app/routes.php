@@ -20,13 +20,17 @@ Route::get('/', function() {
 // all other routes that share the same path, common in all languages
 Route::langGroup(function() {
     Route::get('/', function() {
-        return 'Homepage in ' . Lang::code();
+        Doc::title('Thor CMS Framework')->h1('Thor CMS Framework')->error();
+        return View::make('home');
     });
-    Route::get('/foo/', function() {
-        return 'Foo page in ' . Lang::code();
-    });
-    // current Language model instance
-    Route::get('/info/', function() {
-        return Lang::language();
-    });
+});
+
+// 404
+App::missing(function($e) {
+    if(Admin::inAdmin()) {
+        return Admin::default404();
+    }else{
+        Doc::title('Error 404')->h1('Error 404')->content('Page Not Found')->error(true);
+        return Response::view('404', array(), 404);
+    }
 });
