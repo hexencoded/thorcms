@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{$doc_lang}}" class="{{$doc_classes}}">
+<html lang="{{$doc_lang}}" class="{{$doc_classes}} view-{{Str::slug($doc_view)}}}">
     <head>
         <meta charset="{{$doc_charset}}">
         <meta name="viewport" content="{{$doc_viewport}}">
