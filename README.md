@@ -1,9 +1,10 @@
 Thor CMS
 ======
-**Quickstart Application**
+**QUICKSTART APPLICATION**
 
-Thor CMS is a multipurpose Laravel 4 CMS platform and CRUD generator with multilingual support.
-
+Thor CMS is a multipurpose Laravel 4 CMS platform and CRUD generator
+for everyone and any kind of project, 
+built with multilingual support from the core.
 
 ## Requirements
 * PHP 5.4+
