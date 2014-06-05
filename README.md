@@ -1,5 +1,6 @@
-Thor CMS (Quickstart Application)
+Thor CMS
 ======
+**Quickstart Application**
 
 Thor CMS is a multipurpose Laravel 4 CMS platform and CRUD generator with multilingual support.
 
