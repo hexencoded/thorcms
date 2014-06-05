@@ -123,14 +123,10 @@ return array(
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
                 'Zizaco\Entrust\EntrustServiceProvider',
                 'Zizaco\Confide\ConfideServiceProvider',
-		'Thor\Language\LanguageServiceProvider',
-		'Thor\Translate\TranslateServiceProvider',
-		'Thor\Generators\GeneratorsServiceProvider',
-		'Thor\Models\ModelsServiceProvider',
 		'Thor\ThorServiceProvider',
+		'Thor\Language\LanguageServiceProvider',
+		'Thor\Generators\GeneratorsServiceProvider',
 		'Thor\Admin\AdminServiceProvider',
-
-
 	),
 
 	/*
