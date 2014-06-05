@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{Doc::lang()}}" class="{{Doc::classes()}}">
+<html lang="{{$doc_lang}}" class="{{$doc_classes}}">
     <head>
-        <meta charset="{{Doc::charset()}}">
-        <meta name="viewport" content="{{Doc::viewport()}}">
-        <meta name="description" content="{{Doc::description()}}">
-        <meta name="author" content="{{Doc::author()}}">
-        <link rel="shortcut icon" href="{{Doc::favicon()}}">
+        <meta charset="{{$doc_charset}}">
+        <meta name="viewport" content="{{$doc_viewport}}">
+        <meta name="description" content="{{$doc_description}}">
+        <meta name="author" content="{{$doc_author}}">
+        <link rel="shortcut icon" href="{{$doc_favicon}}">
 
-        <title>{{Doc::title()}}</title>
+        <title>{{$doc_title}}</title>
 
         <!-- Bootstrap core CSS -->
         <style type="text/css" id="relativecss">html,body{position:static}body *{position:relative}</style>
