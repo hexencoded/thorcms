@@ -124,7 +124,7 @@ return array(
                 'Zizaco\Entrust\EntrustServiceProvider',
                 'Zizaco\Confide\ConfideServiceProvider',
 		'Thor\ThorServiceProvider',
-		'Thor\Language\LanguageServiceProvider',
+		'Thor\I18n\I18nServiceProvider',
 		'Thor\Generators\GeneratorsServiceProvider',
 		'Thor\Admin\AdminServiceProvider',
 	),
