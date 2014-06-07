@@ -22,3 +22,6 @@ Install the project using composer:
 
 1. Run the `php artisan thor:setup` command (add `-n` for avoiding questions)
 2. Go to the `/admin` URL and login with `developer` / `developer` or  `admin` / `admin`
+
+
+[ROADMAP](https://github.com/thorcms/thorcms/issues?labels=MILESTONE&page=1&state=open)
