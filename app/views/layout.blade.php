@@ -22,6 +22,12 @@
 
             .navbar {
                 margin-bottom: 20px;
+                min-height:45px;
+            }
+            
+            .navbar-brand{
+                height:auto;
+                padding:4px 15px;
             }
         </style>
 
@@ -43,7 +49,9 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{lang_url()}}" style="padding:8px 15px;"><i class="fa fa-cube fa-2x fa-fw"></i></a>
+                        <a class="navbar-brand" href="{{lang_url()}}">
+                            <img src="{{Backend::asset('img/logo_gray.png')}}" alt="LOGO" />
+                        </a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -53,11 +61,11 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Lang::code()}} <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Lang::language()->name}} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">Change language:</li>
-                                    @foreach(Lang::getAvailableLocales() as $code => $locale)
-                                    <li @if($code == Lang::code())class="active"@endif><a href="{{url().'/'.$code}}">{{$code}}</a></li>
+                @foreach(Lang::getActiveLanguages() as $i => $lang)
+                <li @if($lang->code == Lang::code())class="active"@endif><a href="{{URL::langSwitch($lang->code)}}">{{$lang->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
@@ -70,6 +78,7 @@
                 @yield('main')
             </div>
         </div> <!-- /container -->
+        <small class="thorcms-version al-c label label-info">Thor CMS {{THORCMS_VERSION}}{{'@'.App::environment()}}</small>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
