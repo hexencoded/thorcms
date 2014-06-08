@@ -11,7 +11,7 @@
 
         <!-- Bootstrap core CSS -->
         <style type="text/css" id="relativecss">html,body{position:static}body *{position:relative}</style>
-        <link href="{{Admin::asset('css/app.min.css')}}" rel="stylesheet">
+        <link href="{{Backend::asset('css/app.min.css')}}" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <style>
@@ -73,6 +73,6 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="{{Admin::asset('js/app.min.js')}}"></script>
+        <script src="{{Backend::asset('js/app.min.js')}}"></script>
     </body>
 </html>

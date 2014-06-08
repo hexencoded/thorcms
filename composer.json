@@ -1,7 +1,8 @@
 {
     "name": "thor/thorcms",
-    "description": "Thor CMS Framework starter site. Laravel 4 CMS.",
-    "keywords": ["framework", "laravel", "cms", "blog", "thor", "thorcms", "backend", "multilingual"],
+    "homepage": "http://thorcms.com",
+    "description": "Thor CMS starter site. Laravel 4 multilingual CMS and CRUD Generator.",
+    "keywords": ["laravel", "cms", "framework", "thorcms", "multilingual", "i18n", "crud", "generators", "backend", "admin", "acl"],
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +14,7 @@
     "require": {
         "php": ">=5.4",
         "laravel/framework": "4.1.*",
-        "thor/admin": "dev-master",
+        "thor/platform": "dev-master",
         "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {

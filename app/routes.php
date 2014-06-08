@@ -11,26 +11,16 @@
   |
  */
 
-// When users hit a route without a language,
-// redirect them to the default one using a 302 redirect
+// When visitors hit the root path, redirect them to the default language
 Route::get('/', function() {
     return Redirect::to(Lang::code(), 302);
 });
 
-// all other routes that share the same path, common in all languages
+// All other multilingual routes
 Route::langGroup(function() {
+    // Multilingual home
     Route::get('/', function() {
-        Doc::title('Thor CMS Framework')->h1('Thor CMS Framework')->error();
+        Doc::title('Thor CMS')->h1('Thor CMS')->error();
         return View::make('home');
     });
-});
-
-// 404
-App::missing(function($e) {
-    if(Admin::inAdmin()) {
-        return Admin::default404();
-    }else{
-        Doc::title('Error 404')->h1('Error 404')->content('Page Not Found')->error(true);
-        return Response::view('404', array(), 404);
-    }
 });

@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -123,9 +123,7 @@ return array(
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
                 'Zizaco\Entrust\EntrustServiceProvider',
                 'Zizaco\Confide\ConfideServiceProvider',
-		'Thor\ThorServiceProvider',
-		'Thor\Generators\GeneratorsServiceProvider',
-		'Thor\Admin\AdminServiceProvider',
+		'Thor\Platform\PlatformServiceProvider',
 	),
 
 	/*
@@ -194,12 +192,13 @@ return array(
             
                 'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
                 'Confide'    => 'Zizaco\Confide\ConfideFacade',
-                'Admin'      => 'Thor\Admin\AdminFacade',
+                'Backend'      => 'Thor\Backend\BackendFacade',
                 'Role'      => 'Thor\Models\Role',
                 'Permission'      => 'Thor\Models\Permission',
                 'User'      => 'Thor\Models\User',
                 'CRUD'    => 'Thor\Generators\CrudFacade',
                 'Bag'    => 'Thor\Support\BagFacade',
+                'Bench'    => 'Thor\Support\BenchFacade',
                 'Doc'    => 'Thor\Support\DocumentFacade',
 
 	),
