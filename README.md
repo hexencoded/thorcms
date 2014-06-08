@@ -6,6 +6,10 @@ Thor CMS is a multipurpose Laravel 4 CMS platform and CRUD generator
 for everyone and any kind of project, 
 built with multilingual support from the core.
 
+* [Project website](http://thorcms.com/)
+* [Demo server](http://demo.thorcms.com/)
+* [Roadmap](https://github.com/thorcms/thorcms/issues?labels=MILESTONE&page=1&state=open)
+
 ## Requirements
 * PHP 5.4+
 * Database connection (by default a sqlite file is used)
@@ -20,8 +24,5 @@ Install the project using composer:
 
 ## Getting started
 
-1. Run the `php artisan thor:setup` command (add `-n` for avoiding questions)
-2. Go to the `/admin` URL and login with `developer` / `developer` or  `admin` / `admin`
-
-
-[ROADMAP](https://github.com/thorcms/thorcms/issues?labels=MILESTONE&page=1&state=open)
+1. Run the `php artisan thor:install` command (add `-n` for avoiding questions)
+2. Go to the `/backend` URL and login with `developer` / `developer` or  `admin` / `admin`
