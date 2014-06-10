@@ -23,4 +23,7 @@ Route::langGroup(function() {
         Doc::title('Thor CMS')->h1('Thor CMS')->error();
         return View::make('home');
     });
+
+    // URL to Pageable resolver
+    Route::any('{slug}', array('before' => 'pageable.resolve', 'uses' => 'PageableController@execute'))->where('slug', '.*');
 });

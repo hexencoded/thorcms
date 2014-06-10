@@ -196,6 +196,8 @@ return array(
                 'Role'      => 'Thor\Models\Role',
                 'Permission'      => 'Thor\Models\Permission',
                 'User'      => 'Thor\Models\User',
+                'Pageable'    => 'Thor\Platform\PageableFacade',
+                'PageableController'    => 'Thor\Platform\PageableController',
                 'CRUD'    => 'Thor\Generators\CrudFacade',
                 'Bag'    => 'Thor\Support\BagFacade',
                 'Bench'    => 'Thor\Support\BenchFacade',
