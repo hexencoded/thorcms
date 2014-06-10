@@ -59,6 +59,7 @@
                             <li><a href="#">Link 1</a></li>
                             <li><a href="#">Link 2</a></li>
                         </ul>
+                         @if(Config::get('thor::i18n.enabled'))
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Lang::language()->name}} <b class="caret"></b></a>
@@ -70,6 +71,7 @@
                                 </ul>
                             </li>
                         </ul>
+                         @endif
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </div>
