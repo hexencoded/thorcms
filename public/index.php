@@ -1,4 +1,7 @@
 <?php
+error_reporting(-1);
+ini_set('display_errors', true);
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -46,4 +49,8 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 |
 */
 
-$app->run();
+try {
+    $app->run();
+} catch (Exception $exc) {
+    echo $exc->getTraceAsString();
+}

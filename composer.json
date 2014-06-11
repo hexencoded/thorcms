@@ -12,13 +12,16 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "laravel/framework": "4.1.*",
+        "php": ">=5.4.0",
+        "laravel/framework": "4.2.*",
         "thor/platform": "dev-develop",
         "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {
         "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
             "app/database/migrations",
             "app/database/seeds",
             "app/tests/TestCase.php"

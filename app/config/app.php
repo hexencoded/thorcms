@@ -78,7 +78,9 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'Oza1FhkTEMBSDwWEjrIftfUVHbIjWwu9',
+
+	'cipher' => MCRYPT_RIJNDAEL_128,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -119,11 +121,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-            
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-                'Zizaco\Entrust\EntrustServiceProvider',
-                'Zizaco\Confide\ConfideServiceProvider',
-		'Thor\Platform\PlatformServiceProvider',
+		//'Thor\Platform\PlatformServiceProvider',
+
 	),
 
 	/*
@@ -184,22 +184,12 @@ return array(
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
 		'Session'         => 'Illuminate\Support\Facades\Session',
+		'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',
 		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-            
-                'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
-                'Confide'    => 'Zizaco\Confide\ConfideFacade',
-                'Backend'      => 'Thor\Backend\BackendFacade',
-                'Role'      => 'Thor\Models\Role',
-                'Permission'      => 'Thor\Models\Permission',
-                'User'      => 'Thor\Models\User',
-                'CRUD'    => 'Thor\Generators\CrudFacade',
-                'Bag'    => 'Thor\Support\BagFacade',
-                'Bench'    => 'Thor\Support\BenchFacade',
-                'Doc'    => 'Thor\Support\DocumentFacade',
 
 	),
 
