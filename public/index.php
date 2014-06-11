@@ -49,8 +49,4 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 |
 */
 
-try {
-    $app->run();
-} catch (Exception $exc) {
-    echo $exc->getTraceAsString();
-}
+$app->run();

@@ -121,8 +121,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+            
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-		//'Thor\Platform\PlatformServiceProvider',
+		'Thor\Platform\PlatformServiceProvider',
 
 	),
 
@@ -184,13 +185,14 @@ return array(
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
 		'Session'         => 'Illuminate\Support\Facades\Session',
-		'SoftDeletingTrait' => 'Illuminate\Database\Eloquent\SoftDeletingTrait',
 		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+                //'Thor'            => 'Thor\Platform\ThorFacade',
+                //'Sentinel'        => 'Thor\Platform\SentinelFacade',
+                'Backend'         => 'Thor\Backend\BackendFacade',
 	),
 
 );
