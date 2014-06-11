@@ -14,7 +14,7 @@
     "require": {
         "php": ">=5.4",
         "laravel/framework": "4.1.*",
-        "thor/platform": "dev-develop",
+        "thor/platform": "dev-master",
         "barryvdh/laravel-ide-helper": "1.*"
     },
     "autoload": {
