@@ -14,9 +14,9 @@ window title, meta tags, canonical, etc. It's a superset of Translatable
 * **Treeable**: For models that may have a parent and/or children of the same type.
 
 ### Core models
-* **User** (Confide)
-* **Role** (Entrust)
-* **Permission** (Entrust)
+* **User**
+* **Role**
+* **Permission**
 * **Language**
 * **Module**
 * **Image**

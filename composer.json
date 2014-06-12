@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "laravel/framework": "4.2.*",
+        "laravel/framework": "4.1.*",
         "thor/platform": "dev-develop",
         "barryvdh/laravel-ide-helper": "1.*"
     },

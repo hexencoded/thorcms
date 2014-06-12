@@ -78,9 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'Oza1FhkTEMBSDwWEjrIftfUVHbIjWwu9',
-
-	'cipher' => MCRYPT_RIJNDAEL_128,
+	'key' => 'YourSecretKey!!!',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -124,7 +122,6 @@ return array(
             
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 		'Thor\Platform\PlatformServiceProvider',
-
 	),
 
 	/*
@@ -190,9 +187,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-                //'Thor'            => 'Thor\Platform\ThorFacade',
-                //'Sentinel'        => 'Thor\Platform\SentinelFacade',
+                'Thor'            => 'Thor\Platform\ThorFacade',
+                'Sentinel'        => 'Thor\Platform\SentinelFacade',
                 'Backend'         => 'Thor\Backend\BackendFacade',
-	),
 
+	),
 );
