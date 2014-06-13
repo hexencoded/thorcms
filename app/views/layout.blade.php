@@ -50,7 +50,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="{{lang_url()}}">
-                            <img src="{{Backend::asset('img/logo_gray.png')}}" alt="LOGO" />
+                            <img src="{{Backend::asset('img/logo_alpha.png')}}" alt="LOGO" />
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">

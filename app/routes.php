@@ -22,18 +22,7 @@ if (Config::get('thor:i18n.enabled')) {
 Route::langGroup(function() {
     // Multilingual home
     Route::get('/', function() {
-        Thor\Platform\DocumentFacade::title('Thor CMS')->h1('Thor CMS')->error();
+        Thor\Platform\DocumentFacade::title('Thor CMS')->h1('Thor CMS');
         return View::make('home');
     });
-
-    // URL to Pageable resolver. Bust be after all other route definitions
-    Route::any('{slug}', array('before' => 'pageable.resolve', 'uses' => function($slug) {
-    /* $pageable = Route::resolvePageable($slug);
-      if(($pageable instanceof \Thor\Models\Behaviours\IPageable) and ($pageable->exists())) {
-      return $pageable->execute(array('slug'=>$slug));
-      }else{
-      App::abort(404);
-      } */
-    App::abort(404);
-}))->where('slug', '.*');
 });
