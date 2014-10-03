@@ -8,11 +8,11 @@ built with multilingual support from the core.
 
 * [Project website](http://thorcms.com/)
 * [Demo server](http://demo.thorcms.com/)
-* [Roadmap](https://github.com/thorcms/thorcms/issues?labels=MILESTONE&page=1&state=open)
+* [Roadmap](https://github.com/thorcms/platform/pull/3)
 
 ## Requirements
 * PHP 5.4+
-* Database connection (by default a sqlite file is used)
+* Database connection (by default a SQLite file is used)
 
 ## Setup
 
