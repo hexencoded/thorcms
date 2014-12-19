@@ -17,3 +17,7 @@ _ide_helper.php
 /protected/
 /public/uploads/
 /public/packages/
+/app/routes
+/app/lang/packages
+/app/config/packages
+/app/database/migrations
