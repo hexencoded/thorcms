@@ -52,7 +52,7 @@ return array(
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'ru',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -190,16 +190,16 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
             
-                'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
-                'Confide'    => 'Zizaco\Confide\ConfideFacade',
-                'Backend'      => 'Thor\Backend\BackendFacade',
-                'Role'      => 'Thor\Models\Role',
-                'Permission'      => 'Thor\Models\Permission',
-                'User'      => 'Thor\Models\User',
-                'CRUD'    => 'Thor\Generators\CrudFacade',
-                'Bag'    => 'Thor\Support\BagFacade',
-                'Bench'    => 'Thor\Support\BenchFacade',
-                'Doc'    => 'Thor\Support\DocumentFacade',
+        'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
+        'Confide'    => 'Zizaco\Confide\ConfideFacade',
+        'Backend'      => 'Thor\Backend\BackendFacade',
+        'Role'      => 'Thor\Models\Role',
+        'Permission'      => 'Thor\Models\Permission',
+        'User'      => 'Thor\Models\User',
+        'CRUD'    => 'Thor\Generators\CrudFacade',
+        'Bag'    => 'Thor\Support\BagFacade',
+        'Bench'    => 'Thor\Support\BenchFacade',
+        'Doc'    => 'Thor\Support\DocumentFacade',
 
 	),
 
